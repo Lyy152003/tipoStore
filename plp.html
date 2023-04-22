@@ -1,0 +1,286 @@
+<!-- products listing page -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <!-- thông báo đầu trang -->
+            <div class="header-top">
+                <p>Are you ready to experience the amazing features of our website? 
+                    <b>Log in</b> to explore today 🐰
+                </p>
+            </div>
+
+            <!-- Logo - search - signin - basket -->
+            <div class="header-navbar">
+                <ul>
+                    <li class="header-navbar-left">
+                        <a href="http://"><img src="./images/logo-web.png" alt=""></a>
+                        <p>T I P O</p>
+                        <input type="search" placeholder="Search">
+                    </li>
+                    <li class="header-navbar-right">
+                        <a href="http://"><ion-icon class="icon" name="basket-outline"></ion-icon></a>
+                        <a href="http://"><ion-icon class="icon" name="heart-outline"></ion-icon></a>
+                        <div class="icon-person-container">
+                            <a href="http://"><ion-icon class="icon" name="person-outline"></ion-icon></a>
+                            <div class="form-person">
+                                <button class="btn-signin" onclick="openSigninForm()"><ion-icon class="user-person" name="person-outline"></ion-icon>Sign in</button>
+                                <button class="btn-signup" onclick="openSignupForm()"><ion-icon class="user-person" name="person-add-outline"></ion-icon>Sign up</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Menu -->
+            <div class="header-menu">
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="http://">Home</a></li>
+                            <li><a href="http://">Brands</a></li>
+                            <li><a href="http://">Products</a></li>
+                            <li><a href="http://">Skincare</a></li>
+                            <li><a href="http://">Fragrance</a></li>
+                            <li><a href="http://">Tips</a></li>
+                            <li><a href="http://">About US</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <!-- Mục lục sản phẩm -->
+		<section class="main-product-list">
+			<h2>Product List</h2>
+			<ul>
+				<li><button class="btn-products">Product</button></li>
+				<li><button class="btn-products">Product</button></li>
+				<li><button class="btn-products">Product</button></li>
+				<li><button class="btn-products">Product</button></li>
+			</ul>
+            <h2>Brands</h2>
+			<ul>
+				<li><button class="btn-brands">Product</button></li>
+				<li><button class="btn-brands">Product</button></li>
+				<li><button class="btn-brands">Product</button></li>
+				<li><button class="btn-brands">Product</button></li>
+			</ul>
+            <h2>Price Range</h2>
+            <form>
+                <div class="inputPrice">
+                    <input type="number" id="min-price" name="min-price" placeholder="₫ Min">
+                    <input type="number" id="max-price" name="max-price" placeholder="₫ Max">
+                </div>
+                <br>
+                <button id="btn-applyPrice" type="submit">Apply</button>
+            </form>
+		</section>
+
+        <!-- list sản phẩm -->
+		<section class="main-product-details">
+            <!-- deco -->
+            <img src="./images/deco-ads.jpg" alt="" id="deco-product">
+            <!-- show sản phẩm -->
+            <h2>Name List</h2>
+            <div class="section-listproduct-container">
+                <article id="product1" class="product">
+                    <img src="./images/bg1.jpeg" alt="Product 1">
+                    <h2>Product 1</h2>
+                    <p>Description of Product 1</p>
+                    <p>Price: $100</p>
+                    <a href="#" class="button">Buy Now</a>
+                </article>
+    
+                <article id="product2" class="product">
+                    <img src="./images/bg1.jpeg" alt="Product 2">
+                    <h2>Product 2</h2>
+                    <p>Description of Product 2</p>
+                    <p>Price: $200</p>
+                    <a href="#" class="button">Buy Now</a>
+                </article>
+    
+                <article id="product3" class="product">
+                    <img src="./images/bg1.jpeg" alt="Product 3">
+                    <h2>Product 3</h2>
+                    <p>Description of Product 3</p>
+                    <p>Price: $300</p>
+                    <a href="#" class="button">Buy Now</a>
+                </article>
+    
+                <article id="product4" class="product">
+                    <img src="./images/bg1.jpeg" alt="Product 4">
+                    <h2>Product 4</h2>
+                    <p>Description of Product 4</p>
+                    <p>Price: $400</p>
+                    <a href="#" class="button">Buy Now</a>
+                </article>
+                <article id="product1" class="product">
+                    <img src="./images/bg1.jpeg" alt="Product 1">
+                    <h2>Product 1</h2>
+                    <p>Description of Product 1</p>
+                    <p>Price: $100</p>
+                    <a href="#" class="button">Buy Now</a>
+                </article>
+    
+                <article id="product2" class="product">
+                    <img src="./images/bg1.jpeg" alt="Product 2">
+                    <h2>Product 2</h2>
+                    <p>Description of Product 2</p>
+                    <p>Price: $200</p>
+                    <a href="#" class="button">Buy Now</a>
+                </article>
+    
+                <article id="product3" class="product">
+                    <img src="./images/bg1.jpeg" alt="Product 3">
+                    <h2>Product 3</h2>
+                    <p>Description of Product 3</p>
+                    <p>Price: $300</p>
+                    <a href="#" class="button">Buy Now</a>
+                </article>
+    
+                <article id="product4" class="product">
+                    <img src="./images/bg1.jpeg" alt="Product 4">
+                    <h2>Product 4</h2>
+                    <p>Description of Product 4</p>
+                    <p>Price: $400</p>
+                    <a href="#" class="button">Buy Now</a>
+                </article>
+                <article id="product1" class="product">
+                    <img src="./images/bg1.jpeg" alt="Product 1">
+                    <h2>Product 1</h2>
+                    <p>Description of Product 1</p>
+                    <p>Price: $100</p>
+                    <a href="#" class="button">Buy Now</a>
+                </article>
+    
+                <article id="product2" class="product">
+                    <img src="./images/bg1.jpeg" alt="Product 2">
+                    <h2>Product 2</h2>
+                    <p>Description of Product 2</p>
+                    <p>Price: $200</p>
+                    <a href="#" class="button">Buy Now</a>
+                </article>
+    
+                <article id="product3" class="product">
+                    <img src="./images/bg1.jpeg" alt="Product 3">
+                    <h2>Product 3</h2>
+                    <p>Description of Product 3</p>
+                    <p>Price: $300</p>
+                    <a href="#" class="button">Buy Now</a>
+                </article>
+    
+                <article id="product4" class="product">
+                    <img src="./images/bg1.jpeg" alt="Product 4">
+                    <h2>Product 4</h2>
+                    <p>Description of Product 4</p>
+                    <p>Price: $400</p>
+                    <a href="#" class="button">Buy Now</a>
+                </article>
+            </div>
+			
+		</section>
+	</main>
+
+    <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="footer-heading">About Us</h3>
+              <p class="footer-text">Short description about your website or company.</p>
+            </div>
+            <div class="col-md-3">
+              <h3 class="footer-heading">Support</h3>
+              <ul class="footer-list">
+                <li><a href="#" class="footer-link">FAQ</a></li>
+                <li><a href="#" class="footer-link">Contact Us</a></li>
+                <li><a href="#" class="footer-link">Shipping & Returns</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3 class="footer-heading">Follow Us</h3>
+              <ul class="social-icons">
+                <li><a href="#" class="social-link"><img src="./images/logo-fb.png" alt=""></a></li>
+                <li><a href="#" class="social-link"><img src="./images/logo-twitter.png" alt=""></a></li>
+                <li><a href="#" class="social-link"><img src="./images/logo-ins.png" alt=""></a></li>
+                <li><a href="#" class="social-link"><img src="./images/logo-ldn.png" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3 class="footer-heading">Get Updates</h3>
+              <p class="footer-text">Subscribe to our newsletter to receive updates and exclusive offers.</p>
+              <form class="footer-form">
+                <input type="email" placeholder="Enter your email" class="footer-input">
+                <button type="submit" class="footer-button">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+    <!-- ANOTHER FORM -->
+        <!-- Sign in -->
+        <div class="form-container" id="loginForm">
+            <form>
+                <h2>Sign In</h2>
+                <div class="input-Form">
+                  <input type="email" placeholder="📧 Email Address" required>
+                </div>
+                <div class="input-Form">
+                  <input type="password" placeholder="👁️‍🗨️ Password" required>
+                </div>
+                <div class="remember-loginForm">
+                  <input type="checkbox" id="remember">
+                  <label for="remember">Remember Me</label>
+                </div>
+                <p>By clicking “Sign In”, you (1) agree to the current version of our TERMS OF USE, and (2) have read Tipo's Privacy Policy</p>
+                <button class="btn-form">SIGN IN</button>
+                <!-- <div class="forgot-loginForm">
+                  <a href="#">Forgot Your Password?</a>
+                </div> -->
+              </form>
+              <br> <br> <br>
+              <hr>
+              
+              <button class="btn-closeForm" id="btn-signin"><ion-icon name="close-outline"></ion-icon></button>
+        </div> 
+        <!-- Sign up -->
+        <div class="form-container" id="signupForm">
+            <form>
+                <h2 style="text-align: center;">Create an Account</h2>
+                <hr> <br>
+                <div class="input-Form">
+                    <input type="text" placeholder="💗 First name" required>
+                    <input type="text" placeholder="💗 Last name" required>
+                    </div>
+                <div class="input-Form">
+                    <input type="email" placeholder="📧 Email Address" required>
+                </div>
+                <div class="input-Form">
+                    <input type="password" placeholder="👁️‍🗨️ Password" required>
+                </div>
+                <div class="input-Form">
+                    <input type="number" placeholder="📞 Phone Number" required>
+                    </div>
+                <p>By clicking “Join Now”, automatically receive Beauty Insider offers and notifications via email.</p>
+                <button class="btn-form">JOIN NOW</button>
+                <!-- <div class="forgot-loginForm">
+                    <a href="#">Forgot Your Password?</a>
+                </div> -->
+                </form>
+                <button class="btn-closeForm" id="btn-signup" ><ion-icon name="close-outline"></ion-icon></button>
+            </div> 
+    <!-- Liên kết js, thư viện -->
+    <!-- thêm thư viện để dùng icon -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+</body>
+</html>

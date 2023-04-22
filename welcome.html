@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+    <title>Store Tipo</title>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <!-- thông báo đầu trang -->
+            <div class="header-top">
+                <p>Are you ready to experience the amazing features of our website? 
+                    <b>Log in</b> to explore today 🐰
+                </p>
+            </div>
+
+            <!-- Logo - search - signin - basket -->
+            <div class="header-navbar">
+                <ul>
+                    <li class="header-navbar-left">
+                        <a href="http://"><img src="./images/logo-web.png" alt=""></a>
+                        <p>T I P O</p>
+                        <input type="search" placeholder="Search">
+                    </li>
+                    <li class="header-navbar-right">
+                        <a href="http://"><ion-icon class="icon" name="basket-outline"></ion-icon></a>
+                        <a href="http://"><ion-icon class="icon" name="heart-outline"></ion-icon></a>
+                        <div class="icon-person-container">
+                            <a href="http://"><ion-icon class="icon" name="person-outline"></ion-icon></a>
+                            <div class="form-person">
+                                <button class="btn-signin" onclick="openSigninForm()"><ion-icon class="user-person" name="person-outline"></ion-icon>Sign in</button>
+                                <button class="btn-signup" onclick="openSignupForm()"><ion-icon class="user-person" name="person-add-outline"></ion-icon>Sign up</button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Menu -->
+            <div class="header-menu">
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li><a href="http://">Home</a></li>
+                            <li><a href="http://">Brands</a></li>
+                            <li><a href="http://">Products</a></li>
+                            <li><a href="http://">Skincare</a></li>
+                            <li><a href="http://">Fragrance</a></li>
+                            <li><a href="http://">Tips</a></li>
+                            <li><a href="http://">About US</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section>
+            <!-- list picture giới thiêu trang -->
+            <div class="section-picture">
+                <div class="background-picture">
+                    <img class="mySlides" src="./images/bg1.jpeg" >
+                    <img class="mySlides" src="./images/bg2.jpeg" >
+                    <img class="mySlides" src="./images/bg3.jpeg" >
+                    <img class="mySlides" src="./images/bg4.jpeg" >
+                </div>
+                <div class="picture-caption">
+                    <h1>"Be Your Own Kind of Beautiful with Our Products"</h1>
+                    <p><i>Because gorgeous, glowing skin <br> is for everyone</i></p>
+                    <a href="#" class="btn-shop">Shop Now</a>
+                </div>
+            </div>
+
+            <!-- list sản phẩm -->
+            <div class="section-listproducts">
+                
+            </div>
+
+            <!-- Deco homepage -->
+            <div class="section-decoration">
+                <div class="decoration-container">
+                    <div class="video-decoration">
+                        <video autoplay muted loop>
+                        <source src="./video/deco.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="description-decoration">
+                        <h1>Skincare For Life</h1>
+                        <p><i>Whether you are a man looking to use our product to improve your style, or a woman looking to create a new fashion style, our product will meet your needs.
+                            <br>
+                            What is special about our product is its flexibility and versatility. With many color options and optimized designs, our product easily fits into many different styles and preferences of both boys and girls. </i></p>
+                    </div>
+                </div>
+            </div>
+            <!-- list brand -->
+            <div class="section-brand">
+                <div class="brand-collection">
+                    <h1 class="animated-text fade-in">Brand Name</h1>
+                    <div class="collection-grid">
+                      <div class="collection-item item-1">
+                        <img src="./images/bg1.jpeg" alt="Product 1">
+                        <h3 class="animated-text zoom-in">Product 1</h3>
+                      </div>
+                      <div class="collection-item item-2">
+                        <img src="./images/bg1.jpeg" alt="Product 2">
+                        <h3 class="animated-text zoom-in">Product 2</h3>
+                      </div>
+                      <div class="collection-item item-3">
+                        <img src="./images/bg1.jpeg" alt="Product 3">
+                        <h3 class="animated-text zoom-in">Product 3</h3>
+                      </div>
+                      <div class="collection-item item-3">
+                        <img src="./images/bg1.jpeg" alt="Product 3">
+                        <h3 class="animated-text zoom-in">Product 3</h3>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- deco chay ko cần php -->
+            <img src="./images/deco3.jpg" alt="" style="width: 100%; height: 700px; transform: translate(555);">
+            <!-- feedback customer -->
+            <br>
+            <div class="section-feedback">
+                <div class="feedback-container">
+                    <div class="customer-feedback">
+                        <div class="stars">
+                            <span>⭐ ⭐ ⭐ ⭐ ⭐</span>
+                        </div>
+                        <div class="question">
+                            <h3>Great product</h3>
+                            <p>Great product, very fast shipping 😍👍</p>
+                            <i>Anastasiia Shevchenko, 4 days ago</i>
+                        </div>
+                    </div>
+                    <div class="customer-feedback">
+                        <div class="stars">
+                            <span>⭐ ⭐ ⭐ ⭐ ⭐</span>
+                        </div>
+                        <div class="question">
+                            <h3>Great Variety</h3>
+                            <p>I love everything in the box. I received 6 items. Some were of my own choices and the ...</p>
+                            <i>Cynthia Stanley, 2 days ago</i>
+                        </div>
+                    </div>
+                    <div class="customer-feedback">
+                        <div class="stars">
+                            <span>⭐ ⭐ ⭐ ⭐ ⭐</span>
+                        </div>
+                        <div class="question">
+                            <h3>Smooth experience</h3>
+                            <p>Smooth experience, fast international shipping,...</p>
+                            <i>Mel </i>
+                        </div>
+                    </div>
+                    <div class="customer-feedback">
+                        <div class="stars">
+                            <span>⭐ ⭐ ⭐ ⭐ ⭐</span>
+                        </div>
+                        <div class="question">
+                            <h3>Great Products, Quick Delivery</h3>
+                            <p>My products came very quickly and I love them.😇😘</p>
+                            <i>Nancy</i>
+                        </div>
+                    </div>
+                    <div class="customer-feedback">
+                        <div class="stars">
+                            <span>⭐ ⭐ ⭐ ⭐ ⭐</span>
+                        </div>
+                        <div class="question">
+                            <h3>Oh boy !</h3>
+                            <p>Beautiful wrap and present in the package..</p>
+                            <i>Debora Alexis, 17 hours ago</i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <h3 class="footer-heading">About Us</h3>
+              <p class="footer-text">Short description about your website or company.</p>
+            </div>
+            <div class="col-md-3">
+              <h3 class="footer-heading">Support</h3>
+              <ul class="footer-list">
+                <li><a href="#" class="footer-link">FAQ</a></li>
+                <li><a href="#" class="footer-link">Contact Us</a></li>
+                <li><a href="#" class="footer-link">Shipping & Returns</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3 class="footer-heading">Follow Us</h3>
+              <ul class="social-icons">
+                <li><a href="#" class="social-link"><img src="./images/logo-fb.png" alt=""></a></li>
+                <li><a href="#" class="social-link"><img src="./images/logo-twitter.png" alt=""></a></li>
+                <li><a href="#" class="social-link"><img src="./images/logo-ins.png" alt=""></a></li>
+                <li><a href="#" class="social-link"><img src="./images/logo-ldn.png" alt=""></a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <h3 class="footer-heading">Get Updates</h3>
+              <p class="footer-text">Subscribe to our newsletter to receive updates and exclusive offers.</p>
+              <form class="footer-form">
+                <input type="email" placeholder="Enter your email" class="footer-input">
+                <button type="submit" class="footer-button">Subscribe</button>
+              </form>
+            </div>
+          </div>
+        </div>
+    </footer>
+
+
+    <!-- ANOTHER FORM -->
+        <!-- Sign in -->
+    <div class="form-container" id="loginForm">
+        <form>
+            <h2>Sign In</h2>
+            <div class="input-Form">
+              <input type="email" placeholder="📧 Email Address" required>
+            </div>
+            <div class="input-Form">
+              <input type="password" placeholder="👁️‍🗨️ Password" required>
+            </div>
+            <div class="remember-loginForm">
+              <input type="checkbox" id="remember">
+              <label for="remember">Remember Me</label>
+            </div>
+            <p>By clicking “Sign In”, you (1) agree to the current version of our TERMS OF USE, and (2) have read Tipo's Privacy Policy</p>
+            <button class="btn-form">SIGN IN</button>
+            <!-- <div class="forgot-loginForm">
+              <a href="#">Forgot Your Password?</a>
+            </div> -->
+          </form>
+          <br> <br> <br>
+          <hr>
+          
+          <button class="btn-closeForm" id="btn-signin"><ion-icon name="close-outline"></ion-icon></button>
+    </div> 
+    <!-- Sign up -->
+    <div class="form-container" id="signupForm">
+        <form>
+            <h2 style="text-align: center;">Create an Account</h2>
+            <hr> <br>
+            <div class="input-Form">
+                <input type="text" placeholder="💗 First name" required>
+                <input type="text" placeholder="💗 Last name" required>
+                </div>
+            <div class="input-Form">
+                <input type="email" placeholder="📧 Email Address" required>
+            </div>
+            <div class="input-Form">
+                <input type="password" placeholder="👁️‍🗨️ Password" required>
+            </div>
+            <div class="input-Form">
+                <input type="number" placeholder="📞 Phone Number" required>
+                </div>
+            <p>By clicking “Join Now”, automatically receive Beauty Insider offers and notifications via email.</p>
+            <button class="btn-form">JOIN NOW</button>
+            <!-- <div class="forgot-loginForm">
+                <a href="#">Forgot Your Password?</a>
+            </div> -->
+            </form>
+            <button class="btn-closeForm" id="btn-signup" ><ion-icon name="close-outline"></ion-icon></button>
+        </div> 
+
+    <!-- Liên kết js, thư viện -->
+    <!-- thêm thư viện để dùng icon -->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <script src="main.js" ></script>
+</body>
+</html>
